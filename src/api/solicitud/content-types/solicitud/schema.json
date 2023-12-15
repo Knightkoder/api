@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solicituds",
+  "info": {
+    "singularName": "solicitud",
+    "pluralName": "solicituds",
+    "displayName": "Solicitud",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NombreApellido": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Telefono": {
+      "type": "string"
+    },
+    "comuna": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::comuna.comuna"
+    },
+    "Adjunto": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedores",
+  "info": {
+    "singularName": "proveedor",
+    "pluralName": "proveedores",
+    "displayName": "Proveedor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "NombreRepresentante": {
+      "type": "string"
+    },
+    "FechaUltimaCertificacion": {
+      "type": "date"
+    },
+    "CertificadoTraslado": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ResolucionFuncionamiento": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "NombreContacto": {
+      "type": "string"
+    },
+    "EmailContacto": {
+      "type": "email"
+    },
+    "NumeroContacto": {
+      "type": "string"
+    },
+    "ZonaCobertura": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "Servicios": {
+      "type": "string"
+    }
+  }
+}

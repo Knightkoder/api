@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comunas",
+  "info": {
+    "singularName": "comuna",
+    "pluralName": "comunas",
+    "displayName": "Comuna",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Obs": {
+      "type": "blocks"
+    }
+  }
+}
